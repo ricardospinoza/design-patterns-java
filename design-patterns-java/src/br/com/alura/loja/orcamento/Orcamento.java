@@ -17,9 +17,8 @@ public class Orcamento {
 		this.situacao = new EmAnalise();
 	}
 
-
 	public void aplicarDescontoExtra() {
-		BigDecimal valorDescontoExtra = this.situacao.calcularValorDescontoExtra(this);
+		BigDecimal valorDescontoExtra = this.situacao.calcularDescontoExtra(this);
 		this.valor = this.valor.subtract(valorDescontoExtra);
 	}
 	
@@ -34,11 +33,11 @@ public class Orcamento {
 	public void finalizar() {
 		this.situacao.finalizar(this);
 	}
-	
+
 	public BigDecimal getValor() {
 		return valor;
 	}
-	
+
 	public int getQuantidadeItens() {
 		return quantidadeItens;
 	}
@@ -46,12 +45,9 @@ public class Orcamento {
 	public SituacaoOrcamento getSituacao() {
 		return situacao;
 	}
-
+	
 	public void setSituacao(SituacaoOrcamento situacao) {
 		this.situacao = situacao;
 	}
 
-	
-	
-	
 }

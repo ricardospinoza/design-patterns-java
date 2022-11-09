@@ -2,10 +2,10 @@ package br.com.alura.loja;
 
 public class DomainException extends RuntimeException {
 
-	private static final long serialVersionUID = 7514146549044879492L;
+	private static final long serialVersionUID = 1L;
 
-	public DomainException(String msg) {
-		super(msg);
-	}	
-	
+	public DomainException(String mensagem) {
+		super(mensagem);
+	}
+
 }
